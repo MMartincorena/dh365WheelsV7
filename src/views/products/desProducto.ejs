@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/products/styles_desProducto.css" />
+    <%- include('../partials/head.ejs')%>
+        <title>Lista de autos</title>
+</head>
+
+<body>
+    <%- include('../partials/header.ejs')%>
+        <div class="espacioEnBlanco"></div>
+        <div class="listadoAutos">
+            <% for (let i = 0; i< autos.length; i++) { %>
+                <div class="contenedorAuto">
+                    <div class="cardAuto" onclick="window.open('/productos/<%=autos[i].id%>','mywindow');" style="cursor: pointer">
+                        <a class="nombre-tipo"><%= autos[i].modelo %></a>
+                        <div class="color-blanco"></div>
+                        <img class="imagenLista" src="/img/products/<%= autos[i].imagen %>" alt="" />
+                    </div>
+                    <div class="datosDetalles">
+                        <div class="colLogo">
+                            <img class="imgLogo" src="/img/products/Logos/VolkswagenPNG.png" alt="" />
+                        </div>
+                        <div class="colDetalleAnio">
+                            <p class="estDetalle">Año</p>
+                            <a class="dinamDetalle">
+                                <%= autos[i].anio %>
+                            </a>
+                        </div>
+
+                        <div class="colDetalle">
+                            <p class="estDetalle">Combustible</p>
+                            <a class="dinamDetalle">
+                                <%= autos[i].combustible %>
+                            </a>
+                        </div>
+
+                        <div class="colPrecio">
+                            <p class="estDetalle">Precio</p>
+                            <a class="dinamDetallePrecio">$ <%= autos[i].precio %></a>
+                        </div>
+                    </div>
+                    <div class="casillaBoton">
+                        <button class="botonProducto">Agregar al carrito</button>
+                        <button class="botonProducto">Comprar</button>
+                      </div>
+                </div>
+                <% } %>
+        </div>
+</body>
+<%- include('../partials/footer.ejs')%>
+
+</html>

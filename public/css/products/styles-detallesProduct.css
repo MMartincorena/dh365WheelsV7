@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 320px) {
+    .espacioEnBlanco{
+      height: 70px;
+      width: 100vw;
+    }
+    .cont-Detalles {
+        width: 100vw;
+        height: 22vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #fff;
+        flex-wrap: wrap;
+    }
+
+  .colLogo {
+    height: 8vh;
+    width: 100vh;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* .filaDos,
+  .filaUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 5vh;
+  } */
+
+  .colDetalle {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+  .estDetalle {
+    font-family: "Saira";
+    color: rgb(122, 121, 121);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .dinamDetalle {
+    color: #484646;
+    /* margin-top: -5px; */
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .dinamDetallePrecio {
+    color: #000;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media (min-width: 700px) {
+  .espacioEnBlanco{
+    height: 70px;
+    width: 100vw;
+  }
+  .colDetalle {
+    width: 30%;
+  }
+
+  .colLogo {
+    background-size: 70%;
+  }
+
+  .estDetalle {
+    font-family: "Saira";
+    color: rgb(122, 121, 121);
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .dinamDetalle {
+    color: #484646;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .dinamDetallePrecio {
+    color: #000;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+} 
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+ 
+@media (min-width: 1280px) {
+  .espacioEnBlanco{
+    height: 70px;
+    width: 100vw;
+  }
+    .cont-Detalles {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #fff;
+        align-content: center;
+    }
+
+    .colLogo {
+        display: flex;
+        width: 25%;
+        height: 90%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .colDetalle {
+        height: 9vh;
+        width: 12%;
+        display: flex;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+} 

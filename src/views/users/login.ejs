@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="/css/páginas/styles_login.css">
+  <%- include('../partials/head.ejs')%>
+  <title>Login</title>
+<body>
+  <%- include('../partials/header.ejs')%>
+<div class="completo">
+  <div class="registro">
+    <div class="cabecera">
+      <img class="logo" src="/img/SVG/365Wheels.svg" >
+    </div>
+    <section class="form-register">
+      <form class="datos" action="/usuarios/ingresar" method="POST" enctype="multipart / form-data">
+        <h4>Ingresar datos</h4>
+        <input class="controls" type="email" name="email" placeholder="Email"
+        value="<%= locals.oldData ? oldData.email : null %>">
+        <% if (locals.errors && errors.email) { %>
+          <div class="text-danger">
+            <%= errors.email.msg %>
+          </div>
+          <% } %>
+        <input class="controls" type="password" name="password"  placeholder="Contraseña">
+        <% if (locals.errors && errors.password) { %>
+          <div class="text-danger">
+            <%= errors.password.msg %>
+          </div>
+          <% } %>
+        <label class="termino"><input class="termino" type="checkbox" name="recordar" id="recordar" value="recordar">Recordar usuario</label>
+        <% if (locals.errors && errors.chbx) { %>
+          <div class="text-danger">
+            <%= errors.chbx.msg %>
+          </div>
+          <% } %>
+        <input class="botons-registro" type="submit" value="Ingresar">
+      </form>
+    </section>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+    <link rel="stylesheet" href="/css/users/userPerfil.css" />
+    <%- include('../partials/head.ejs')%>
+    <title>Perfil</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs')%>
+    <div class="cuerpoPagina">
+      <div class="estructura">
+        <div class="panelIzquierdo">
+          <div class="imagenAvatar">
+            <img class="imagenAvatar" src="/img/users/<%= userLogin.avatar %>" alt="">
+          </div>
+        </div>
+
+        <div class="panelDerecho">
+            <h1 class="tituloPerfil">Datos del perfil</h1>
+          <div class="datosPerfil">
+            <div class="filaDato">
+              <p class="propiedadesPerfil">Nombre: </p>
+              <a class="dinamDetalle"><%= userLogin.nombre %></a>
+            </div>
+            <div class="filaDato">
+              <p class="propiedadesPerfil">Apellido: </p>
+              <a class="dinamDetalle"><%= userLogin.apellido %></a>
+            </div>
+
+            <div class="filaDato">
+              <p class="propiedadesPerfil">Email: </p>
+              <a class="dinamDetalle"><%= userLogin.email %></a>
+            </div>
+          </div>
+          <div class="botonesPerfil">
+            <button class="btnPerfil" onclick="window.location.href='/usuarios/<%=userLogin.id%>/modificar'">Editar</button>
+            <button class="btnPerfil" onclick="window.location.href='/usuarios/<%=userLogin.id%>/eliminar'">Borrar usuario</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

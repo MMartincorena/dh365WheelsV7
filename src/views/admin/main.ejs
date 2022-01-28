@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="/css/admin/styles_main.css">
+    <%- include('../partials/head.ejs')%>
+    <title>Agrocol</title>
+</head>
+
+<body>
+    <%- include('../partials/header.ejs')%>
+    <div class="espacio"></div>
+
+    <div class="cuerpo">
+        <div class="opciones">
+            <img class="imgSeleccion" src="/img/admin/Usuario.png" alt="icono de usuario">
+            <button class="btnSeleccion" onclick="window.location.href='/admin/admin/usuarios'">Usuario</button>
+        </div>
+           <div class="opciones">
+            <img class="imgSeleccion" src="/img/admin/Autos.png" alt="icono de usuario">
+            <button class="btnSeleccion" onclick="window.location.href='/admin/admin/autos'">Autos</button>
+        </div>
+             <div class="opciones">
+            <img class="imgSeleccion" src="/img/admin/Pantalla.png" alt="icono de casilla">
+            <button class="btnSeleccion" onclick="window.location.href='/admin/admin/principal'">Pantalla principal</button>
+       
+        </div>
+    </div>
+</body>
+</html>

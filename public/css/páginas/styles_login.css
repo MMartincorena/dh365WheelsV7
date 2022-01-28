@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira";
+}
+.text-danger{
+  color: red;
+}
+
+/* ---------------------  FUENTES  ------------------------- */
+
+@font-face {
+  font-family: "Saira-Black";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-ExtraBold";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Regular";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Medium";
+  src: url("/fonts/Saira/Saira-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Thin";
+  src: url("/fonts/Saira/Saira-Thin.ttf");
+}
+
+/* ----------------------------------------------------------- */
+@media (min-width: 320px) {
+
+  .registro {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cabecera{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(21, 155,216);
+    display: flex;
+  }
+  
+    .logo {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  } 
+
+  .form-register {
+    width: 90vw;
+    height: 70%;
+    margin-top: 5%;
+    background: #fff;
+    font-family: "Saira-ExtraBold";
+    color: #000;
+  }
+
+  .form-register h4 {
+    font-family: "Saira-Medium";
+    font-size: 32px;
+    color: #0c1f48;
+    margin-bottom: 20px;
+  }
+
+  .controls {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 32px;
+    border: 0;
+    border-bottom: 1.5px solid #1f53c5;
+    font-family: "calibri";
+    font-size: 23px;
+    color: #000;
+  }
+
+  .form-register a {
+    /* color: white; */
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .form-register .botons-registro {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    color: white;
+    margin: 0px 0 16 0;
+    font-family: "Saira-Medium";
+    font-size: 25px;
+    transition: all 0.3s;
+  }
+  .form-register .botons-registro:hover{
+    background-color: rgb(182, 182, 182);
+    color: black;
+  }
+
+  .botonesRS{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  }
+
+  .espacio{
+width: 98%;
+height: 25px;
+display: flex;
+  }
+
+#olvContrasenia{
+color: #1f53c5;
+font-family: "Saira-Medium";
+font-size: 13px;
+margin: 3px 0;
+width: 100%;
+text-align: end;
+
+  }
+
+ .botRegistro-Facebook{
+  width: 45%;
+  background: #1f53c5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  margin: 15px 0;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.botRegistro-Google{
+  width: 45%;
+  background: #fff;
+  border: 1px #1f53c5 solid;
+  border-radius: 5px;
+  padding: 5px;
+  color: #1f53c5;
+  margin: 15px 0;
+  font-family: "Saira-Medium";
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logoRS{
+  height: 20px;
+}
+.fuente-google{
+  color: #1f53c5;
+}
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+@media (min-width: 700px) {
+.completo{
+  background-color: #0c1f48;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .registro{
+    margin-top: 0;
+    width: 60%;
+    padding: 5%;
+    height: 70%;
+    background-color: #fff;
+    /* display: flex; */
+  }
+
+  .cabecera{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(21, 155,216);
+    display: flex;
+  }
+
+  .logo {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-register {
+  width: 60vw;
+  height: 70%;
+  margin-top: 5%;
+  background: #fff;
+  font-family: "Saira-ExtraBold";
+  color: #000;
+}
+
+.form-register .botons-registro {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  color: white;
+  margin: 10px 0 0 0;
+  font-family: "Saira-Medium";
+  font-size: 23px;
+  transition: all 0.3s;
+}
+.form-register .botons-registro:hover{
+  background-color: rgb(182, 182, 182);
+  color: black;
+}
+.fuente-google{
+  color: #1f53c5;
+}
+
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ */
+
+@media (min-width: 1280px) {
+
+  .completo {
+    background-color: #0c1f48;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .registro {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: 55vh;
+    width: 65vw;
+  }
+
+  .cabecera {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(21, 155,216);
+    display: flex;
+}
+
+.logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.form-register {
+  width: 60vw;
+  height: 60%;
+  padding: 5%;
+  margin: 0;
+  background: #fff;
+  font-family: "Saira-ExtraBold";
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fuente-google{
+  color: #1f53c5;
+}
+
+}

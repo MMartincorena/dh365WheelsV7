@@ -1,0 +1,223 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 350px) {
+    
+    .espacioEnBlanco {
+        height: 70px;
+        width: 100vw;
+    }
+    .contenedor-tipos {
+        margin: 20px 0;
+    }
+    .contenedorAuto {
+        border: rgb(199 195 195) solid 0.2px;
+        margin: 20px 10px;
+    }
+    .cardAuto {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: #00397d;
+        position: relative;
+    }
+    .cardAuto .nombre-tipo {
+        color: #fff;
+        font-family: "Saira";
+        font-weight: 700;
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        left: 5%;
+        font-size: 30px;
+    }
+    .color-blanco {
+        background-color: #fff;
+        width: 100%;
+        height: 25px;
+        border: #fff solid 0.2px;
+    }
+    .imagenLista {
+        position: absolute;
+        right: 5px;
+        width: 80vw;
+    }
+    .datosDetalles {
+        display: flex;
+        justify-content: space-around;
+        margin: 2px 0;
+        width: 100%;
+        border: #fff;
+    }
+    .colLogo {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgLogo {
+        height: 30px;
+    }
+    .colDetalleAnio {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .colDetalle {
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .colPrecio {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .estDetalle {
+        font-family: "Saira";
+        color: rgb(122, 121, 121);
+        font-size: 11px;
+        margin: 0;
+    }
+    .dinamDetalle {
+        color: #484646;
+        margin-top: -5px;
+        font-weight: bold;
+        font-size: 21px;
+    }
+    .dinamDetallePrecio {
+        color: #000;
+        margin-top: -5px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .casillaBoton {
+        display: flex;
+        justify-content: space-evenly;
+        height: 30px;
+    }
+      
+     .botonProducto{
+      width: 45%;
+      height: 25px;
+      background-color: #fff;
+      border: #918f8f 0.2px solid;
+      border-radius: 3px;
+        }
+    
+    .botonProducto:hover{
+     background-color: #00397d;
+     color: #fff;
+     font-weight: 600;
+    
+    }
+    
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 700px) {
+    .espacioEnBlanco {
+        height: 70px;
+        width: 100vw;
+    }
+    .listadoAutos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .contenedorAuto {
+        width: 45%;
+    }
+    .imagenLista {
+        position: absolute;
+        width: 90%;
+    }
+    .dinamDetalle {
+        font-size: 20px;
+    }
+    .dinamDetallePrecio {
+        font-size: 23px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1280px) {
+    .espacioEnBlanco {
+        height: 70px;
+        width: 100vw;
+    }
+    .imgLogo {
+        height: 25px;
+    }
+    .listadoAutos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .contenedorAuto {
+        width: 22%;
+        border: rgb(199 195 195) solid 0.2px;
+        margin: 10px 1.4%;
+    }
+    .datosDetalles {
+        display: flex;
+        justify-content: space-around;
+        height: 35px;
+        margin: 2px 0;
+    }
+    .imagenLista {
+        position: absolute;
+        width: 90%;
+    }
+    .dinamDetalle {
+        font-size: 15px;
+    }
+    .estDetalle {
+        font-size: 20px;
+    }
+    .dinamDetallePrecio {
+        font-size: 18px;
+    }
+    .cardAuto {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: flex-end;
+        background-color: #00397d;
+        position: relative;
+    }
+    .cardAuto .nombre-tipo {
+        color: #fff;
+        font-family: "Saira";
+        font-weight: 700;
+        position: absolute;
+        z-index: 2;
+        top: 10%;
+        left: 5%;
+        font-size: 25px;
+    }
+    .estDetalle {
+        font-family: "Saira";
+        color: rgb(122, 121, 121);
+        font-size: 11px;
+        margin: 0;
+    }
+}

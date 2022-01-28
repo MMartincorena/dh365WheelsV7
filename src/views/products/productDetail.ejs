@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/products/detallesDelProducto.css" />
+    <%- include('../partials/head.ejs')%>
+    <title>Detalles</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs')%>
+    <div class="portadaDetalle">
+      <div
+        class="imgPortada"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+      <p class="detallesNombre">Detalles</p>
+      <div class="cont-Detalles">
+        <div
+          class="colLogo"
+          style="
+            background-image: url(/img/products/Logos/VolkswagenPNG.png);
+          "
+        ></div>
+        <div class="colDetalle">
+          <p class="estDetalle">Motor</p>
+          <a class="dinamDetalle"><%= miAuto.motor %></a>
+        </div>
+
+        <div class="colDetalle">
+          <p class="estDetalle">Combustible</p>
+          <a class="dinamDetalle"><%= miAuto.combustible %></a>
+        </div>
+
+        <div class="colDetalle">
+          <p class="estDetalle">Color</p>
+          <a class="dinamDetalle"><%= miAuto.color %></a>
+        </div>
+
+        <div class="colDetalle">
+          <p class="estDetalle">Año</p>
+          <a class="dinamDetalle"><%= miAuto.anio %></a>
+        </div>
+
+        <div class="colDetalle">
+          <p class="estDetalle">Kilometros</p>
+          <a class="dinamDetalle"><%= miAuto.kilometros %></a>
+        </div>
+
+        <div class="colDetalle">
+          <p class="estDetalle">Precio</p>
+          <a class="dinamDetallePrecio">$<%= miAuto.precio %></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="descripcion">
+      <div class="textoAuto">
+        <p>
+          El Ferrari LaFerrari fue presentado en el Salón del Automóvil de
+          Ginebra de 2013. Se trata del superdeportivo más moderno, innovador y
+          veloz de la historia de la marca italiana que toma el relevo de
+          modelos tan míticos como el Ferrari F40, el Ferrari F50 o el Ferrari
+          Enzo. Modelos que, sin duda, representan lo mejor.
+        </p>
+      </div>
+
+      <div class="contenedorAuto">
+        <div class="cardAuto">
+          <div class="color-blanco"></div>
+          <img
+            class="imagenProducto"
+            src="/img/products/<%= miAuto.imagen %>"
+            alt=""
+          />
+        </div>
+        <div class="casillaBoton">
+          <button class="botonProducto">Agregar al carrito</button>
+          <button class="botonProducto">Comprar</button>
+        </div>
+      </div>
+
+
+      <div class="videoProducto">
+        <iframe class="iframeProducto"
+          src="https://www.youtube.com/embed/iRsV6YpLsKA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- <div class="imgDescripcion" style="background-image: url(/public/img/JPEG/autos/principal.jpg)"></div> -->
+
+      <div class="textoAuto">
+        <p>
+          El Ferrari LaFerrari fue presentado en el Salón del Automóvil de
+          Ginebra de 2013. Se trata del superdeportivo más moderno, innovador y
+          veloz de la historia de la marca italiana que toma el relevo de
+          modelos tan míticos como el Ferrari F40, el Ferrari F50 o el Ferrari
+          Enzo. Modelos que, sin duda, representan lo mejor.
+        </p>
+      </div>
+    </div>
+
+    <div class="galeria">
+      <div
+        class="img1"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+      <div
+        class="img2"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+      <div
+        class="img3"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+        ></div>
+      <div
+        class="img4"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+      <div
+        class="img5"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+      <div
+        class="img6"
+        style="background-image: url(/img/products/<%=miAuto.imagen%>)"
+      ></div>
+    </div>
+
+    <!-- <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/iRsV6YpLsKA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div> -->
+  </body>
+  <%- include('../partials/footer.ejs')%>
+</html>

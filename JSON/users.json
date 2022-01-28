@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Martin",
+    "apellido": "Martincorena",
+    "email": "mmartincorena@gmail.com",
+    "password": "$2a$10$Hk36i6Xnetui8YgfsAZpWO5rUEqZ.WncM/1Nb8dwyH6xHKl8L7zTe",
+    "confirmPassword": "$2a$10$rT9tdQE6QHsw7L3wUH18wOzFnpQ5qr4599Kpok9VGKtat0VKNRwcS",
+    "avatar": "user-img1642376672271.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Enrique",
+    "apellido": "Martinez",
+    "email": "emartinez@gmail.com",
+    "password": "$2a$10$UrpkypG4X07E97Jx2jynAuknYq/yt31P6sOwFNwKLd9kKkOPw5zDm",
+    "confirmPassword": "$2a$10$UKL0xvhkbkiTyMS99CRFO.U.ScHzxEP08.4vKcu4SaPBvwLesGyEW",
+    "avatar": "user-img1642727367613.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Emidio",
+    "apellido": "Tassone",
+    "email": "etassone@gmail.com",
+    "password": "$2a$10$xNgIDTB6mgEd1XEDRfDkQeh6EzO4m68Yumov9GAXrdnHizbFlLzd6",
+    "confirmPassword": "$2a$10$UhULBqn8T4dlm5UKCGXK4eh6I4se200hNEO7rggj3Xr4zlXmwlvoi",
+    "avatar": "user-img1642727465328.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Willy",
+    "apellido": "Romero",
+    "email": "wromero@gmail.com",
+    "password": "$2a$10$HGJCYOc1yW7OZhp.IMqtVeJBzh1PYtcmILCXAiqmGTo/vPn.ObreW",
+    "confirmPassword": "$2a$10$Hgxb1sqo2sEEygMxgrVH2Oa9RoZ6gdB0Q/hVOhulWesmQnDpgV7cK",
+    "avatar": "user-img1642727509544.jpg"
+  }
+]

@@ -1,0 +1,508 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+@media (min-width: 320px) {
+  .portadaDetalle {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .imgPortada {
+    height: 75vh;
+    width: 100%;
+    background-size: 250%;
+    background-position: -310px;
+    background-repeat: no-repeat;
+  }
+
+  .detallesNombre {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Saira";
+    right: 45%;
+    top: 5%;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .cont-Detalles {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    flex-wrap: wrap;
+  }
+
+  .colLogo {
+    height: 8vh;
+    width: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .colDetalle {
+    width: 30%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+  .estDetalle {
+    font-family: "Saira";
+    color: rgb(122, 121, 121);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .dinamDetalle {
+    color: #484646;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .dinamDetallePrecio {
+    color: #000;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .portadaDetalles {
+    height: 78vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .espacio {
+    width: 100%;
+    height: 22vh;
+    /* background-color: red; */
+  }
+
+  .textoAuto {
+    width: 90%;
+    margin: 30px 10px;
+  }
+
+  .textoAuto p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .imgDescripcion {
+    width: 100%;
+    height: 200px;
+    /* background-color: red; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px 0px;
+  }
+
+  .nombreMarca {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px #c1c1c1 solid;
+  }
+
+  .modeloAuto {
+    max-width: 30%;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .descripcion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 600px;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 50vw;
+    /* height: 120px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* Cuadrado con el auto---------------------------------------------------------------------------------------------- */
+  .contenedorAuto {
+    height: 230px;
+    width: 100%;
+    border: solid 0.2px #918f8f;
+  }
+  .cardAuto {
+    display: flex;
+    height: 185px;
+    width: 100%;
+    justify-content: center;
+    background-color: #00397d;
+    position: relative;
+    align-items: flex-end;
+    /* border: solid 0.2px #918f8f; */
+
+}
+
+  .cardAuto .nombre-tipo {
+    color: #fff;
+    font-family: "Saira";
+    font-weight: 700;
+    position: absolute;
+    z-index: 2;
+    top: -7%;
+    left: 5%;
+    font-size: 30px;
+  }
+
+  .color-blanco {
+    background-color: #fff;
+    width: 100%;
+    height: 25px;
+    border: #fff solid 0.2px;
+  }
+
+  .imagenProducto{
+    position: absolute;
+    width: 90vw;
+  }
+  .casillaBoton {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+    font-family: "Saira";
+  }
+
+  .botonProducto {
+    width: 45%;
+    height: 25px;
+    background-color: #fff;
+    border: #918f8f 0.2px solid;
+    border-radius: 3px;
+  }
+
+  .botonProducto:hover {
+    background-color: #00397d;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* VIDEO----------------------------------------------------------------------------------- */
+
+  .videoProducto {
+    margin: 10px 0px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .iframeProducto {
+    width: 100%;
+    height: 300px;
+    /* margin: 10px 0px; */
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media (min-width: 700px) {
+  .portadaDetalle {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 0px 50px 0px;
+}
+
+  .imgPortada {
+    height: 70vh;
+    width: 100%;
+    /* background-size: contain; */
+    /* background-position: -310px; */
+    /* background-repeat: no-repeat; */
+  }
+
+  .detallesNombre {
+    position: absolute;
+    font-size: 70px;
+    font-family: "Saira";
+    right: 60%;
+    top: 10%;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .colDetalle {
+    width: 30%;
+  }
+
+  .colLogo {
+    background-size: 70%;
+  }
+
+  .estDetalle {
+    font-family: "Saira";
+    color: rgb(122, 121, 121);
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .dinamDetalle {
+    color: #484646;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .dinamDetallePrecio {
+    color: #000;
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .descripcion {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+  .textoAuto {
+    width: 40%;
+    height: 300px;
+  }
+
+  .imgDescripcion {
+    width: 40%;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 770px;
+}
+
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 50vw;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .contenedorAuto {
+    height: 230px;
+    width: 40%;
+}
+
+.cardAuto {
+  display: flex;
+  height: 185px;
+  width: 100%;
+  justify-content: center;
+  background-color: #00397d;
+  position: relative;
+  align-items: flex-end;
+}
+
+.imagenProducto {
+  position: absolute;
+  width: 95%;
+}
+
+.videoProducto {
+  margin: 10px 0px;
+  width: 40%;
+  height: 300px;
+}
+
+.iframeProducto {
+  width: 100%;
+  height: 300px;
+  /* margin: 10px 0px; */
+  text-align: center;
+}
+
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media (min-width: 1280px) {
+  .portadaDetalle {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .detallesNombre {
+    position: absolute;
+    font-size: 70px;
+    font-family: "Saira";
+    right: 75%;
+    top: 10%;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .imgPortada {
+    height: 90vh;
+    width: 100%;
+    background-size: 100%;
+    background-position: 0px;
+    background-repeat: no-repeat;
+  }
+  .cont-Detalles {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    align-content: center;
+  }
+
+  .colLogo {
+    display: flex;
+    width: 25%;
+    height: 90%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .colDetalle {
+    height: 9vh;
+    width: 12%;
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    width: 33vw;
+    /* height: 220px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .contenedorAuto {
+    height: 300px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  .cardAuto {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    background-color: #00397d;
+    position: relative;
+    align-items: flex-end;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 600px;
+  width: 100%;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+  width: 33.3%;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.videoProducto {
+  margin: 10px 0px;
+  width: 40%;
+  height: 300px;
+}
+
+.iframeProducto {
+  width: 100%;
+  height: 300px;
+  /* margin: 10px 0px; */
+  text-align: center;
+}
+
+
+}

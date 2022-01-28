@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="/css/páginas/styles_productsList.css">
+  <%- include('../partials/head.ejs')%>
+  <title>Lista de Productos</title>
+<body>
+  <%- include('../partials/header.ejs')%>
+  <h1 class="title">Lista de usuarios</h1>
+  <div class="listado">
+  <ul>
+      <% for (let i = 0; i< usuarios.length; i++) { %>
+        <li>
+            <img class="img" src="<%= usuarios[i].avatar %>" alt="">
+            <div class="lista">
+            <label>Nombre</label>
+            <a href="/usuarios/<%= usuarios[i].id %>"><%= usuarios[i].nombre %></a>
+            <label>Apellido</label>
+            <a href="/usuarios/<%= usuarios[i].id %>"><%= usuarios[i].Apellido %></a>
+            <Label>Email</Label>
+            <a href="/usuarios/<%= usuarios[i].id %>"><%= usuarios[i].email %></a>
+        </div>
+        </li>
+      <% } %>
+  </ul>
+</div>
+    
+</body>
+    <%- include('../partials/footer.ejs')%>
+</html>

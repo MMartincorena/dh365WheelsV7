@@ -1,0 +1,1288 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Saira";
+  color: #fff;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "Saira";
+  color: #333;
+  font-weight: 800;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-family: "Saira";
+  color: #333;
+  font-weight: 700;
+}
+
+
+
+/* ----------------------------------------------------------------- */
+/* -----------------------  PORTADA  ------------------------------- */
+/* ----------------------------------------------------------------- */
+
+.portada {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(9, 146, 199, 1);
+  position: relative;
+  /* z-index: -1; */
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+}
+
+.portada_1 {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/PNG/Marcas/BMW/bmw-frente-min.png");
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: 94px 92px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.portada .titulos-portada {
+  position: absolute;
+  z-index: 3;
+  margin-top: 90px;
+  margin-left: 20px;
+  width: 80%;
+}
+
+hr {
+  width: 190px;
+}
+
+.portada .titulos-portada .titulo h1 {
+  font-size: 40px;
+  line-height: 64px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Saira";
+  -webkit-text-stroke: .15px #24303c;
+}
+
+.portada .titulos-portada .subtitulo h5 {
+  font-size: 20px;
+  line-height: 54px;
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.banner-shep:after {
+  width: 670px;
+  right: -330px;
+}
+
+.banner-shep:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 363px;
+  width: 788px;
+  height: 100%;
+  transform: skewX(-30deg);
+  background: #24303c;
+  opacity: 1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----------- botones ------------------*/
+
+.botones-portada {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0px 20px 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.portada .botones-portada .boton-naranja {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(45deg, rgba(217, 87, 29, 1) 0%, rgba(239, 179, 46, 1) 100%);
+  transform: skewX(-30deg);
+  border: none;
+  margin-left: 5%;
+}
+
+.portada .botones-portada .boton-blanco {
+  margin-top: 30px;
+  width: 90%;
+  height: 50px;
+  background: #fff;
+  transform: skewX(-30deg);
+  margin-left: 5%;
+  border: none;
+}
+
+a .boton-texto {
+  align-items: center;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 54px;
+  color: #24303c;
+  font-family: "Saira";
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+/* ------------------------------------- */
+
+.img-portada {
+  height: auto;
+  width: 1200px;
+  margin-left: 125px;
+  /* clip: rect(0, 100px, 200px, 0); */
+}
+
+/* ---------------------------------------------------------------------- */
+/* -----------------------  MÁS VENDIDOS  ------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.cuadrado {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.contenedor-tipos {
+  margin: 20px 0;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.t1 {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #00397d;
+  margin: 10px 0px;
+}
+
+.t1 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 4%;
+  left: 5%;
+  font-size: 25px;
+}
+
+.t2 {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #5e909d;
+  margin: 10px 0px;
+}
+
+.t2 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 29%;
+  left: 5%;
+  font-size: 25px;
+  
+}
+
+.t3 {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #a41716;
+  margin: 10px 0px;
+}
+
+.t3 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 54%;
+  left: 5%;
+  font-size: 25px;
+}
+
+.t4 {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #c1c1c1c1;
+  margin: 10px 0px;
+}
+
+.t4 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 79%;
+  left: 5%;
+  font-size: 25px;
+}
+
+.color-blanco {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+}
+
+.imagen {
+  position: absolute;
+  width: 85vw;
+  /* left: 15%; */
+
+}
+
+/* ------------------------------------------------------------------ */
+/* --------------------- Últimas BUSQUEDAS -------------------------- */
+/* ------------------------------------------------------------------ */
+
+.catalogo-home {
+  background-color: rgba(9, 146, 199, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 20px 0px;
+}
+
+.catalogo-home h2 {
+  color: #fff;
+}
+
+.catalogo-centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auto-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #C1C1C1 solid;
+  border-radius: 10px;
+  margin: 5px;
+  width: 85%;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.9);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+}
+
+.auto-catalogo .imagen-catalogo {
+  width: 75vw;
+  margin: 10px 0 0 0;
+}
+
+.auto-catalogo ul {
+  margin-left: 20px;
+  font-family: "Saira";
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+.auto-catalogo .h3-catalogo {
+  color: #24303c;
+  font-size: 30px;
+  display: inline-block;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.auto-catalogo h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #63696e;
+  font-family: "Saira";
+  font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* -----------------------  AUTO de la SEMANA  ----------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.auto-semana {
+  padding: 20px 10px 20px 10px;
+  /* background-image: url("/public"); */
+}
+
+.auto-semana h2 {
+  color: #333;
+  margin: 0 0 0 10px;
+}
+
+.descripcion-semana{
+padding: 10px;
+text-align: justify;
+background-color: rgba(0, 0, 0, 0.8);
+margin: 0px 0 10px 0;
+border-radius: 15px;
+}
+
+.descripcion-semana p{
+  font-weight: 400;
+}
+
+/* .auto-frase {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 0px;
+} */
+
+.imagen-semana{
+  width: 95vw;
+}
+
+.auto {
+  width: 94vw;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.texto-frase {
+  position: absolute;
+  text-align: right;
+  margin: 40px 15px 0px 0px;
+  font-size: 20px;
+  font-family: "Saira";
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(8, 8, 8, 0.2);
+  padding: 10px 15px;
+}
+
+
+@media (min-width: 700px) {
+
+
+/* -----------------------  PORTADA  ------------------------------- */
+
+.portada {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(9, 146, 199, 1);
+  position: relative;
+  /* z-index: -1; */
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.portada_1 {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/PNG/Marcas/BMW/bmw-frente-min.png");
+  background-size: 188%;
+  background-repeat: no-repeat;
+  background-position: 261px 28px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.portada .titulos-portada {
+  position: absolute;
+  z-index: 3;
+  margin-top: 119px;
+  margin-left: 56px;
+  width: 80%;
+}
+
+hr {
+  width: 220px;
+}
+
+.portada .titulos-portada .titulo h1 {
+  font-size: 58px;
+  line-height: 64px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Saira";
+  -webkit-text-stroke: .15px #24303c;
+  margin-top: 15px;
+}
+
+.portada .titulos-portada .subtitulo h5 {
+  font-size: 20px;
+  line-height: 54px;
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.banner-shep:after {
+  width: 670px;
+  right: -330px;
+}
+
+.banner-shep:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 363px;
+  width: 788px;
+  height: 100%;
+  transform: skewX(-30deg);
+  background: #24303c;
+  opacity: 1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----------- botones ------------------*/
+
+.botones-portada {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0px 20px 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.portada .botones-portada .boton-naranja {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(45deg, rgba(217, 87, 29, 1) 0%, rgba(239, 179, 46, 1) 100%);
+  transform: skewX(-30deg);
+  border: none;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+.portada .botones-portada .boton-blanco {
+  margin-top: 30px;
+  width: 90%;
+  height: 50px;
+  background: #fff;
+  transform: skewX(-30deg);
+  margin-left: 5%;
+  border: none;
+}
+
+
+/* ------------------------------------- */
+
+.img-portada {
+  height: auto;
+  width: 1200px;
+  margin-left: 125px;
+  /* clip: rect(0, 100px, 200px, 0); */
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* -----------------------  MÁS VENDIDOS  ------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.cuadrado {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.contenedor-tipos {
+  margin: 20px 0;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.t1 {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #00397d;
+  margin: 15px 0px;
+}
+
+.t1 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 8%;
+  left: 5%;
+  font-size: 65px;
+}
+
+.t2 {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #5e909d;
+  margin: 15px 0px;
+}
+
+.t2 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 33%;
+  left: 5%;
+  font-size: 65px;
+  -webkit-text-stroke: .65px #5e909d;
+}
+
+.t3 {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #a41716;
+  margin: 15px 0px;
+}
+
+.t3 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 58%;
+  left: 5%;
+  font-size: 65px;
+}
+
+.t4 {
+  display: flex;
+  height: 160px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #c1c1c1c1;
+  margin: 15px 0px;
+}
+
+.t4 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 83%;
+  left: 5%;
+  font-size: 65px;
+}
+
+.color-blanco {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+}
+
+.imagen {
+  position: absolute;
+  width: 55vw;
+  left: 43%;
+}
+
+/* ------------------------------------------------------------------ */
+/* --------------------- Últimas BUSQUEDAS -------------------------- */
+/* ------------------------------------------------------------------ */
+
+.catalogo-home {
+  background-color: rgba(9, 146, 199, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 20px 0px;
+}
+
+.catalogo-home h2 {
+  color: #fff;
+}
+
+.catalogo-centrar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.auto-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #C1C1C1 solid;
+  border-radius: 10px;
+  margin: 5px;
+  width: 42%;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.9);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+}
+
+.auto-catalogo .imagen-catalogo {
+  width: 40vw;
+  margin: 10px 0 0 0;
+}
+
+.auto-catalogo ul {
+  margin-left: 20px;
+  font-family: "Saira";
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+.auto-catalogo .h3-catalogo {
+  color: #24303c;
+  font-size: 35px;
+  display: inline-block;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.auto-catalogo h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: #63696e;
+  font-family: "Saira";
+  font-weight: 700;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* -----------------------  AUTO de la SEMANA  ----------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.auto-semana {
+  padding: 20px 10px 20px 10px;
+  /* background-image: url("/public/img"); */
+  /* background-size: 108%;
+  background-repeat: no-repeat;
+  background-position: 0px 0px; */
+}
+
+.auto-semana h2 {
+  color: #fff;
+  margin: 0 0 0 10px;
+}
+
+.auto-semana_columna{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.descripcion-semana{
+padding: 10px;
+text-align: justify;
+background-color: rgba(0, 0, 0, 0.8);
+margin: 0px 0 10px 0;
+border-radius: 15px;
+width: 45%;
+height: auto;
+}
+
+.imagen-semana{
+  width: 46vw;
+  border-radius: 15px;
+}
+
+.descripcion-semana p{
+  font-weight: 400;
+}
+
+/* .auto-frase {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin: 20px 0px;
+} */
+
+.video{
+  width: 45%;
+}
+}
+
+
+
+
+
+@media (min-width: 1280px) {
+
+/* -----------------------  PORTADA  ------------------------------- */
+
+.portada {
+  width: 99vw;
+  height: 100vh;
+  background-color: rgba(9, 146, 199, 1);
+  position: relative;
+  /* z-index: -1; */
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.portada_1 {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/PNG/Marcas/BMW/bmw-frente-min.png");
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: 695px -14px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.portada .titulos-portada {
+  position: absolute;
+  z-index: 3;
+  margin-top: 95px;
+  margin-left: 90px;
+  width: 80%;
+}
+
+hr {
+  width: 220px;
+}
+
+.portada .titulos-portada .titulo h1 {
+  font-size: 58px;
+  line-height: 64px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Saira";
+  -webkit-text-stroke: .15px #1477da;
+  margin-top: 15px;
+}
+
+.portada .titulos-portada .subtitulo h5 {
+  font-size: 20px;
+  line-height: 54px;
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+/* .banner-shep:after {
+  width: 670px;
+  right: -330px;
+}
+
+.banner-shep:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 363px;
+  width: 788px;
+  height: 100%;
+  transform: skewX(-30deg);
+  background: #24303c;
+  opacity: 1;
+} */
+
+.banner-shep2:after {
+  width: 670px;
+  right: -300px;
+}
+
+.banner-shep2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 363px;
+  width: 200px;
+  height: 100%;
+  transform: skewX(-35deg);
+  background: red;
+  opacity: 1;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----------- botones ------------------*/
+
+.botones-portada {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: -20px 0px 20px 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.portada .botones-portada .boton-naranja {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(45deg, rgba(217, 87, 29, 1) 0%, rgba(239, 179, 46, 1) 100%);
+  transform: skewX(-30deg);
+  border: none;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+
+.portada .botones-portada .boton-blanco {
+  margin-top: 30px;
+  width: 90%;
+  height: 50px;
+  background: #fff;
+  transform: skewX(-30deg);
+  margin-left: 5%;
+  border: none;
+}
+
+
+/* ------------------------------------- */
+
+.img-portada {
+  height: auto;
+  width: 1200px;
+  margin-left: 125px;
+  /* clip: rect(0, 100px, 200px, 0); */
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/* -----------------------  MÁS VENDIDOS  ------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+.cuadrado {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.contenedor-tipos {
+  margin: 20px 0;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.t1 {
+  display: flex;
+  height: 250px;
+  width: 40%;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #00397d;
+  margin: 15px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.t1 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 10%;
+  font-size: 50px;
+}
+
+.t1 .imagen{
+  position: absolute;
+  width: 38vw;
+  left: 13%;
+}
+
+.t2 {
+  display: flex;
+  height: 250px;
+  width: 40%;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #5e909d;
+  margin: 15px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.t2 .imagen{
+  position: absolute;
+    width: 42vw;
+    left: 57%;
+    /* top: 13%; */
+}
+
+.t2 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 57%;
+  font-size: 50px;
+}
+
+.t3 {
+  display: flex;
+  height: 250px;
+  width: 40%;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #a41716;
+  margin: 15px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.t3 .imagen{
+  position: absolute;
+  width: 38vw;
+  left: 13%;
+}
+
+.t3 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  left: 10%;
+  font-size: 50px;
+}
+
+.t4 {
+  display: flex;
+  height: 250px;
+  width: 40%;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #c1c1c1c1;
+  margin: 15px 0px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.t4 .imagen{
+  position: absolute;
+    width: 42vw;
+    left: 57%;
+    /* top: 55%; */
+}
+
+.t4 .nombre-tipo {
+  color: #fff;
+  font-family: "Saira";
+  font-weight: 700;
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  left: 57%;
+  font-size: 50px;
+}
+
+.color-blanco {
+  background-color: #fff;
+  width: 100%;
+  height: 30px;
+}
+
+.imagen {
+  position: absolute;
+  width: 55vw;
+  left: 43%;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* --------------------- Últimas BUSQUEDAS -------------------------- */
+/* ------------------------------------------------------------------ */
+
+.catalogo-home {
+  background-color: rgba(9, 146, 199, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 20px 0px;
+}
+
+.catalogo-home h2 {
+  color: #fff;
+}
+
+.catalogo-centrar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.auto-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px #C1C1C1 solid;
+  border-radius: 10px;
+  margin: 5px;
+  width: 22%;
+  padding: 10px;
+  background-color: rgba(250, 250, 250, 0.9);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.93);
+}
+
+.auto-catalogo .imagen-catalogo {
+  width: 20vw;
+  margin: 10px 0 0 0;
+}
+
+.auto-catalogo ul {
+  margin-left: 20px;
+  font-family: "Saira";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.auto-catalogo li {
+  font-size: 20px;
+}
+
+.auto-catalogo .h3-catalogo {
+  color: #24303c;
+  font-size: 35px;
+  display: inline-block;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.auto-catalogo h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #63696e;
+  font-family: "Saira";
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*------------------------------------------------------------------Barra de busqueda ------------------------------------------------------------------*/
+
+  @import "compass/css3";
+
+  /***********************
+ * Essential Structure *
+ ***********************/
+  .flexsearch--wrapper {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    position: static;
+  }
+
+  .flexsearch--form {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .flexsearch--input-wrapper {
+    padding: 0 66px 0 0;
+    /* Right padding for submit button width */
+    overflow: hidden;
+  }
+
+  .flexsearch--input {
+    width: 100%;
+  }
+
+  /***********************
+ * Configurable Styles *
+ ***********************/
+  .flexsearch {
+    padding: 0 25px 0 200px;
+    /* Padding for other horizontal elements */
+  }
+
+  .flexsearch--input {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 30px;
+    padding: 0 46px 0 10px;
+    border-color: #888;
+    border-radius: 35px;
+    /* (height/2) + border-width */
+    border-style: solid;
+    border-width: 3px;
+    margin-top: 15px;
+    color: #333;
+    font-family: "Helvetica", sans-serif;
+    font-size: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .flexsearch--submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    margin-top: 20px;
+    /* margin-top + border-width */
+    margin-right: 5px;
+    /* border-width */
+    background: transparent;
+    color: #888;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  .flexsearch--input:focus {
+    outline: none;
+    border-color: #333;
+  }
+
+  .flexsearch--input:focus.flexsearch--submit {
+    color: #333;
+  }
+
+  .flexsearch--submit:hover {
+    color: #333;
+    cursor: pointer;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+
+  input:-moz-placeholder {
+    color: #888;
+  }
+}

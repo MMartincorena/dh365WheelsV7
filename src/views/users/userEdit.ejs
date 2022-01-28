@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="/css/users/userProfile.css">
+  <%- include('../partials/head.ejs')%>
+  <title>Login</title>
+<body>
+  <%- include('../partials/header.ejs')%>
+
+<div class="completo">
+  <div class="registro">
+
+    <div class="cabecera">
+      <img class="logo" src="/img/SVG/365Wheels.svg">
+    </div>
+    <section class="form-register">
+      <form action="/usuarios/<%= user.id %>/actualizar?_method=PUT" method="POST" enctype="multipart / form-data">
+        <h4><i class="fas fa-user-circle">PERFIL</i></h4>
+        <input class="controls" type="text" name="nombre" placeholder="Nombre" value ='<%= user.nombre %>'>
+        <input class="controls" type="text" name="apellido" placeholder="Apellido" value ='<%= user.apellido %>'>
+        <input class="controls" type="email" name="email" placeholder="Email" value ='<%= user.email %>'>
+        <input class="controls" type="password" name="password" placeholder="Contraseña">
+        <input class="controls" type="password" name="confirmPassword" placeholder="Confirmar contraseña">
+        <label>Avatar</label>
+        <input type = 'file' name ='avatar' placeholder="Avatar" value="Editar avatar">
+        <input class="botons-registro" type="submit" value="Confirmar">
+      </form>
+    </section>
+  </div>
+</div>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/css/admin/tablaCRUD.css" />
+    <%- include('../partials/head.ejs')%>
+    <title>Autos</title>
+  </head>
+  <body>
+    <%- include('../partials/header.ejs')%>
+    <div class="estructura">
+        <table>
+          <thead>
+
+            <!-- cabecera -->
+            <tr class="filaColor">
+              <th scope="col" class="colID">ID</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Modelo</th>
+              <th scope="col">Color</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Acción</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% autos.forEach(auto => { %>
+            <!-- cuerpo con los datos de la tabla -->
+            <tr class="filaDatos">
+              <td><%= auto.id %></td>
+              <td><%= auto.marca %></td>
+              <td><%= auto.modelo %></td>
+              <td><%= auto.color %></td>
+              <td>$ <%= auto.precio %></td>
+              <td class="colBotones">
+                <button class="btnModificar">
+                  <i class="bx bx-message-square-edit" onclick="window.location.href='/productos/<%=auto.id%>/modificar'"></i>
+                </button>
+                <button class="btnEliminar" onclick="window.location.href='/productos/<%=auto.id%>/eliminar'">
+                  <i class="bx bx-message-square-minus"></i>
+                </button>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+        <button class="btnCrear" onclick="window.location.href='/productos/crear'"><i class='bx bx-message-square-add' ></i> Crear</button>
+      </div>
+  </body>
+</html>

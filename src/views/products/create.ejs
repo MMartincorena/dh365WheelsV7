@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="/css/páginas/styles_create.css">
+  <%- include('../partials/head.ejs')%>
+  <title>Login</title>
+<body>
+  <%- include('../partials/header.ejs')%>
+<div class="completo">
+  <div class="registro">
+
+    <div class="cabecera">
+      <img class="logo" src="/img/SVG/autoConfig.svg" >
+    </div>
+    <section class="form-register">
+        <div class="datos">
+          <h4>Datos del vehículo</h4>
+    <form class="datos" action="/productos" method="POST" enctype="multipart/form-data">
+      <input class="controls" 
+      type="text"  name="marca"
+       id="marca" placeholder="Marca" 
+      value="<%= locals.oldData ? oldData.marca : null %>">
+      <% if (locals.errors && errors.marca) { %>
+        <div class="text-danger"><%= errors.marca.msg %></div>
+        <% } %>
+      <input class="controls" 
+      type="text"  name="modelo" 
+      id="modelo" placeholder="Modelo"
+      value="<%= locals.oldData ? oldData.modelo : null %>">
+      <% if (locals.errors && errors.modelo) { %>
+        <div class="text-danger"><%= errors.modelo.msg %></div>
+        <% } %>
+      <input class="controls" 
+      type="number"  name="kilometros" 
+      id="km" placeholder="Kilometros"
+      value="<%= locals.oldData ? oldData.kilometros : null %>">
+      <% if (locals.errors && errors.kilometros) { %>
+        <div class="text-danger"><%= errors.kilometros.msg %></div>
+        <% } %>
+      <input class="controls" 
+      type="text" name="anio" 
+      id="anio" placeholder="Año"
+      value="<%= locals.oldData ? oldData.anio : null %>">
+      <% if (locals.errors && errors.anio) { %>
+        <div class="text-danger"><%= errors.anio.msg %></div>
+        <% } %>
+      <input class="controls" 
+      type="text"  name="color" 
+      id="color" placeholder="Color"
+      value="<%= locals.oldData ? oldData.color : null %>">
+      <% if (locals.errors && errors.color) { %>
+        <div class="text-danger"><%= errors.color.msg %></div>
+        <% } %>
+      <label>Combustible</label>
+      <select name="combustible" id="comb">
+        <option value="<%= locals.oldData ? oldData.combustible : null %>"></option>
+        <option value="Nafta">Nafta</option>
+        <option value="Gas-Oil">Gas-Oil</option>
+        <option value="Electrico">Electrico</option>
+        <option value="Hibrído">Hibrído</option>
+      </select>
+      <% if (locals.errors && errors.combustible) { %>
+        <div class="text-danger"><%= errors.combustible.msg %></div>
+        <% } %>
+      <input class="controls"
+      type="number"  name="motor" 
+      id="motor" placeholder="Motor"
+      value="<%= locals.oldData ? oldData.motor : null %>">
+      <% if (locals.errors && errors.motor) { %>
+        <div class="text-danger"><%= errors.motor.msg %></div>
+        <% } %>
+      <input class="controls" 
+      type="text"  name="precio" 
+      id="precio" placeholder="Precio"
+      value="<%= locals.oldData ? oldData.precio : null %>">
+      <% if (locals.errors && errors.precio) { %>
+        <div class="text-danger"><%= errors.precio.msg %></div>
+        <% } %>
+      <label>Imagénes</label>
+      <input type="file" name="imagen" id="imagen" placeholder="Imagén">
+      <input class="botons-registro" type="submit" value="Guardar" name="guardar">
+        </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

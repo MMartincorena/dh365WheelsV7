@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira";
+}
+
+@media (min-width: 320px) {
+  .cuerpoPagina {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #0c1f48;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .estructura {
+    height: 70%;
+    width: 90%;
+    background-color: #fff;
+    position: absolute;
+    margin-top: 60px;
+  }
+
+  .panelIzquierdo {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(9, 146, 199, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenAvatar {
+    width: 130px;
+    height: 130px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-image: url(/public/img/JPEG/auto.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .panelDerecho {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tituloPerfil {
+    color: #4067bb;
+  }
+
+  .datosPerfil {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .filaDato {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #0c1f48;
+    font-weight: 600;
+  }
+
+  .propiedadesPerfil {
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
+    color: #0c1f48;
+    font-weight: 0;
+  }
+
+  .botonesPerfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    justify-content: space-evenly;
+  }
+
+  .btnPerfil {
+    width: 80%;
+    height: 30px;
+    font-weight: 600;
+  }
+
+  .btnPerfil:hover {
+    background-color: rgba(9, 146, 199, 1);
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+
+@media (min-width: 700px) {
+
+    .estructura {
+        height: 40%;
+        width: 90%;
+        background-color: #fff;
+        position: absolute;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .panelIzquierdo {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(9, 146, 199, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenAvatar {
+        width: 200px;
+        height: 200px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-image: url(/public/img/JPEG/auto.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .panelDerecho {
+        display: flex;
+        height: 80%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------- */
+
+@media (min-width: 1280px) {
+
+    .estructura {
+        height: 50%;
+        width: 60%;
+        background-color: #fff;
+        position: absolute;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .panelDerecho {
+        display: flex;
+        height: 90%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+}

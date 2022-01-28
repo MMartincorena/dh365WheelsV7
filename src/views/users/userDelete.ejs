@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <link rel="stylesheet" href="/css/users/userProfile.css">
+  <%- include('../partials/head.ejs')%>
+  <title>Login</title>
+<body>
+  <%- include('../partials/header.ejs')%>
+
+<div class="completo">
+  <div class="registro">
+
+    <div class="cabecera">
+      <img class="logo" src="/img/SVG/365Wheels.svg">
+    </div>
+    <section class="form-register">
+      <form action="/usuarios/<%= user.id %>/destruir?_method=DELETE" method="POST" enctype="multipart / form-data">
+        <h4><i class="fas fa-user-circle">PERFIL A ELIMINAR</i></h4>
+        <input class="controls" type="text" name="nombre" placeholder="Nombre" value ='<%= user.nombre %>'>
+        <input class="controls" type="text" name="apellido" placeholder="Apellido" value ='<%= user.apellido %>'>
+        <input class="controls" type="email" name="email" placeholder="Email" value ='<%= user.email %>'>
+        <input class="botons-registro" type="submit" value="Eliminar">
+      </form>
+    </section>
+  </div>
+</div>
+</body>
+
+</html>

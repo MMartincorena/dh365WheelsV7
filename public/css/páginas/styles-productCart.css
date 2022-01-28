@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------  FUENTES  ------------------------- */
+
+@font-face {
+  font-family: "Saira-Black";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-ExtraBold";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Regular";
+  src: url("/fonts/Saira/Saira-Black.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Medium";
+  src: url("/fonts/Saira/Saira-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Saira-Thin";
+  src: url("/fonts/Saira/Saira-Thin.ttf");
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 320px) {
+  body {
+    background-color: rgba(238, 240, 238, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+  }
+
+  .productoCarrito {
+    margin-top: 10px;
+    width: 90vw;
+    height: 15vh;
+    padding: 0vw 2vw 2vw 2vw;
+    /* background-color: green; */
+    border-top: 2px #c1c1c1c1 solid;
+    border-bottom: 2px #c1c1c1c1 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productoCarrito p{
+    font-weight: bold;
+  }
+
+  .arriba {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .abajo {
+    height: 30%;
+    width: 96%;
+    border-top: 1px #c1c1c1c1 solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .casillaNombre {
+    width: 95%;
+    height: 50%;
+    border-bottom: 1px #c1c1c1c1 solid;
+    /* border-radius: 5px;  */
+    /* margin: 1.5%; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .imagenNombre {
+    width: 25px;
+    height: 25px;
+    border: 1px black;
+    background: url(/img/JPEG/Marcas/Ferrari/LaFerrari/LOGO.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* position:absolute; */
+    margin-right: 5px;
+  }
+
+  .nombreMarca {
+    /* position:absolute; */
+    font-size: 25px;
+  }
+
+  /* ------------------------------------------------- */
+
+  .casillaDatos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .imagenProducto {
+    width: 30%;
+    height: 70%;
+    border-radius: 5px;
+    margin: 3% 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* .imagenAuto{
+   width: 60%;
+} */
+
+  .logAuto {
+    width: 20px;
+  }
+
+  .detallesProducto {
+    width: 85%;
+    height: 20%;
+    /* border: 1px red solid; */
+    border-radius: 5px;
+    margin: 1.5% 5%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+
+  .descripcion {
+    display: none;
+  }
+
+  .numeros {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .cantidadProducto {
+    width: 96%;
+    height: 55%;
+    /* border: 1px red solid; */
+    border-radius: 5px;
+    margin: 1.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+
+  .combobox {
+    margin-left: 10px;
+  }
+
+  .ingreso {
+    width: 80%;
+    height: 40%;
+  }
+
+  .valorProducto {
+    width: 96%;
+    height: 55%;
+    /* border: 1px red solid; */
+    border-radius: 5px;
+  }
+
+  .valorPrecio {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+  }
+
+  .nombreProducto {
+    font-size: 20px;
+    color: #000;
+  }
+  .p-cantidad{
+    color: #000;
+  }
+
+  .botons-registro {
+    width: 100%;
+    background-color: rgba(238, 240, 238, 0.3);
+    color: #1f53c5;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 2vw 0 0 3vw;
+    font-family: "Saira-Medium";
+    font-size: 12px;
+  }
+
+
+  /* ---------------------------------------------------------- */
+
+  .resumenCompra {
+    width: 90vw;
+    height: 15vh;
+    border-top: 3px #1f53c5 solid;
+    /* border-radius: 10px; */
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+  }
+  .resumenCompra p{
+    font-weight: bold;
+  }
+  
+
+
+  .botonCompra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 146, 199, 1);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .objeto,
+  .resumenTotal {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  hr {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(9, 146, 199, 1);
+    align-items: center;
+  }
+  .objetoNumero p{
+    color: #000;
+  }
+  .totalParcial p{
+    color: #000;
+  }
+  .resumenPrecio p{
+    color: #000;
+  }
+  .numeroTotal p{
+    color: #000;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+  }
+  .casillaDatos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+  .productoCarrito {
+    margin-top: 10px;
+    width: 60%;
+    height: 15vh;
+    padding: 0vw 1vw;
+    /* background-color: green; */
+    border-top: 2px #c1c1c1c1 solid;
+    border-bottom: 2px #c1c1c1c1 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productoCarrito p{
+    font-weight: bold;
+  }
+
+
+  .botons-registro {
+    width: 100%;
+    background-color: none;
+    color: #1f53c5;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 0;
+    font-family: "Saira-Medium";
+    font-size: 12px;
+  }
+  .cantidadProducto {
+    width: 96%;
+    height: 55%;
+    /* border: 1px red solid; */
+    border-radius: 5px;
+    margin: 1.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.valorPrecio {
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.resumenCompra {
+  width: 35vw;
+  height: 15vh;
+  border-top: none;
+  /* border-radius: 10px; */
+  padding: 0% 1%;
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+}
+.resumenCompra p{
+  font-weight: bold;
+}
+
+
+.botonCompra {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9, 146, 199, 1);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 1280px) {
+
+  body{
+  display: flex;
+  }
+  .columna-central{
+    padding: 0vw 15vw;
+  }
+  .casillaDatos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+  .marco{
+  width: 40vw;
+  height: 15vh;
+  margin-bottom: 2%;
+  margin: 2px solid #000;
+  border: 2px #c2c2c2c2 solid;
+  border-radius: 10px;
+  }
+
+  .productoCarrito {
+    margin-top: 0;
+    padding: 0%;
+    width: 95%;
+    height: 100%;
+    padding: 0vw 1vw;
+    border-top: 0px #c1c1c1c1 solid;
+    border-bottom: 0px #c1c1c1c1 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productoCarrito p{
+    font-weight: bold;
+  }
+  .cantidadProducto {
+    width: 96%;
+    height: 55%;
+    /* border: 1px red solid; */
+    border-radius: 5px;
+    margin: 7% 1.5% 1.5% 1.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+  .resumenCompra {
+    width: 25vw;
+    height: 13vh;
+    border: 2px #c2c2c2c2 solid;
+    border-radius: 10px;
+    padding: 1%;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    right: 15%;
+    margin-top: 7%;
+  }
+  .resumenCompra p{
+    font-weight: bold;
+  }
+
+  .botonCompra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 146, 199, 1);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 1% 1% 0% 1%;
+  }
+  .valorPrecio {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+  }
+ 
+
+
+}

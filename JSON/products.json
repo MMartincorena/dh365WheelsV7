@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "marca": "Volkswagen",
+    "modelo": "Nivus",
+    "kilometros": "23",
+    "año": "2022",
+    "color": "Rojo",
+    "combustible": "Nafta",
+    "motor": "1600",
+    "precio": "17000",
+    "imagen": "auto-img1642642282995.png"
+  },
+  {
+    "id": 2,
+    "marca": "Volkswagen",
+    "modelo": "Taos",
+    "kilometros": "36",
+    "año": "2022",
+    "color": "Azul",
+    "combustible": "Nafta",
+    "motor": "2000",
+    "precio": "17000",
+    "imagen": "auto-img1642642451539.png"
+  },
+  {
+    "id": 3,
+    "marca": "Volkswagen",
+    "modelo": "T-Croos",
+    "kilometros": "84",
+    "año": "2021",
+    "color": "Azul",
+    "combustible": "Nafta",
+    "motor": "2000",
+    "precio": "17000",
+    "imagen": "auto-img1642642500939.png"
+  },
+  {
+    "id": 4,
+    "marca": "Volkswagen",
+    "modelo": "Tiguan",
+    "kilometros": "17",
+    "año": "2022",
+    "color": "Blanco",
+    "combustible": "Nafta",
+    "motor": "2400",
+    "precio": "35000",
+    "imagen": "auto-img1642643034513.png"
+  },
+  {
+    "id": 5,
+    "marca": "Ford",
+    "modelo": "Thundra",
+    "kilometros": "11",
+    "año": "2022",
+    "color": "Negro",
+    "combustible": "Nafta",
+    "motor": "2400",
+    "precio": "70000",
+    "imagen": "auto-img1642643116185.png"
+  }
+]
