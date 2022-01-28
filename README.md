@@ -170,6 +170,8 @@ Dejamos atrás JSON para pasar a algo más profesional que escale mejor. En este
 	De usuarios
 	De tablas secundarias (Opcional) 
 
+![image](https://user-images.githubusercontent.com/18647088/151636729-af32ccb6-3754-48e8-8418-af3ddbc3427e.png)
+
 
 ## Sprint 7 - Validaciones (Back + Front)
 Si el formulario se llena con datos inválidos no hay problema, el problema es si llegan a nuestra base de datos, ahí es donde se desata el caos y se rompe todo. ¡Para eso está la validación! En este sprint validamos tanto desde el frontend como desde el backend.
@@ -207,7 +209,7 @@ En este sprint final vemos que podemos enviar y recibir datos de manera eficient
 
 # Despliegue | 📦
 
-**Tablas BD** - 
+**Tablas BD** - Carpeta _ PDF_BD 
 
 **Heroku**  - https://wheels365.herokuapp.com/
 		
